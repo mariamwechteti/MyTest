@@ -32,6 +32,16 @@ export class LoginComponent implements OnInit {
     login() {
       
       
+      var i=0
+      while (i < this.users.length && this.users[i].username !== this.user.username)
+      {
+        i++;
+      }
+      if (i < this.users.length && this.users[i].password === this.user.password) {
+        localStorage.setItem("user", JSON.stringify(this.users[i]));
+        this.router.navigate(['dashboard']);
+        
+      }
           
     }
 }

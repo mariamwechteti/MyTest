@@ -3,11 +3,11 @@
   <form action="/action_page.php">
     <div class="form-group">
       <label for="email">svn:</label>
-      <input type="email" class="form-control" [(ngModel)]="model.svnUrl" id="email" placeholder="EntersvnUrl" name="svn">
+      <input type="email" class="form-control" [(ngModel)]="model.svn" id="email" placeholder="EntersvnUrl" name="svn">
     </div>
     <div class="form-group">
       <label for="pwd">git:</label>
-      <input type="text" class="form-control"  id="pwd" placeholder="Enter gitUrl"  [(ngModel)]="model.gitUrl" name="git">
+      <input type="text" class="form-control"  id="pwd" placeholder="Enter gitUrl"  [(ngModel)]="model.git" name="git">
     </div>
     <div class="form-group ">
   <label for="example-email-input" >Email:</label>
@@ -16,12 +16,10 @@
  
 </div>
 <textarea class="form-control" id="text" name="text" placeholder="trace of your script" rows="5"></textarea>
-        <h6 class="pull-right" id="count_message"></h6>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
-    </div>
+    
     <p-growl [(value)]="msgs"></p-growl>
-    <button type="submit" (click)="getStream()" (click)=" showInfo()"   label="Info" class=" ui-button-info btn btn-default">Submit</button>
+    <button  (click)="getStream()"  (click)=" showInfo()"   label="Info" pButton type="button" label="Click"></button>
+    
   </form>
 </div>
 

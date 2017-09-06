@@ -26,8 +26,14 @@
   "../node_modules/bootstrap/dist/css/bootstrap.css"
       ],
       "scripts": [ 
-  "../node_modules/bootstrap/dist/js/bootstrap.js",
-     "assets/js/boosted.js"
+  "../node_modules/jquery/dist/jquery.min.js",
+  "../node_modules/jquery/dist/jquery.js",
+   "../node_modules/popper.js/dist/umd/popper.js",  
+     "../node_modules/bootstrap/dist/js/bootstrap.js",
+
+     "assets/js/boosted.js",
+     "assets/css/bootstrap-orange2015.min.css",
+     "assets/js/boosted.min.js"
         ],
       "environmentSource": "environments/environment.ts",
       "environments": {

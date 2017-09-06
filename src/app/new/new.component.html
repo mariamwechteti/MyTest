@@ -1,0 +1,12 @@
+<div class="container">
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">entrer la date:</label>
+      <input type="email" class="form-control" [(ngModel)]="model.date" id="email" placeholder="Enter  la date" name="svn">
+    </div>
+   <p-growl [(value)]="msgs"></p-growl>
+    
+      <button type="button" pButton (click)="showInfo()" label="Info" class="ui-button-info"></button>
+
+  </form>
+</div>

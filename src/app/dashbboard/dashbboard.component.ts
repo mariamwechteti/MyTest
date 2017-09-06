@@ -25,8 +25,8 @@ export class DashbboardComponent implements OnInit {
   ngOnInit() { 
     this.model=new Migration();
     this.model.email="";
-  this.model.svnUrl="";
-  this.model.gitUrl="";
+  this.model.svn="";
+  this.model.git="";
 
    
 }

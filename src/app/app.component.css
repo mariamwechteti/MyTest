@@ -8,7 +8,7 @@ footer {
   border-bottom: 1px solid #F3F3F3;
   border-top: 1px solid #D6D6D6;
 }
-header{
-	margin-bottom: 20px;
-   
+body {
+  min-height: 2000px;
+  padding-top: 70px;
 }
